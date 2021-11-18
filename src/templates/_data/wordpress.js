@@ -107,7 +107,7 @@ function getHeadTags(data, field) {
         return data.title;
       }
     } catch (error) {
-      //console.error("No site, page or post title found.")
+      console.error("No site, page or post title found.")
     }
     return "California drought action";
   }
@@ -119,7 +119,7 @@ function getHeadTags(data, field) {
         return data.title;
       }
     } catch (error) {
-      //console.error("No twitter title found.")
+      console.error("No twitter title found.")
     }
     return "California drought action";
   }
@@ -127,7 +127,7 @@ function getHeadTags(data, field) {
     try {
         return data.site_settings.site_name;
     } catch (error) {
-      //console.error("No site, page or post title found.")
+      console.error("No site, page or post title found.")
     }
     return "California drought action";
   }
@@ -141,14 +141,14 @@ function getHeadTags(data, field) {
         return data.site_settings.site_description;
       }
     } catch (error) {
-      //console.error("No site, page or post description found.")
+      console.error("No site, page or post description found.")
     }
   }
   if (field === "site_description") {
     try {
         return data.site_settings.site_description;
     } catch (error) {
-      //console.error("No site, page or post description found.")
+      console.error("No site, page or post description found.")
     }
   }
   if (field === "canonical_url") {
@@ -168,7 +168,7 @@ function getHeadTags(data, field) {
           height: 630 // Need to expose variable from API
         };
     } catch (error) {
-      //console.error("No social image found.")
+      console.error("No social image found.")
     }
     return "California drought action";
   }
