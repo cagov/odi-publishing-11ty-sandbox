@@ -53,8 +53,9 @@
 </head>
 
 <body>
+  <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+
   <div class="header-container">
-    {% include "../../../../node_modules/@cagov/ds-skip-to-content/skip-to-content.html" %}
     {% include "utility-header.njk" %}
     {% include "branding.njk" %}
     {% include "nav-component.njk" %}
@@ -87,8 +88,8 @@
   {% endblock %}
 
   <div class="footer-container">
-    {% include "agency-footer.njk" %}
-    {% include "footer-universal.njk" %}
+    {% include "../footer.njk" %}
+    {% include "../footer-universal.njk" %}
   </div>
 
   {% set js %}

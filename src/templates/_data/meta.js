@@ -182,14 +182,14 @@ const getMetaTagValue = function (data, field) {
         return data.site_settings.site_description;
       }
     } catch (error) {
-      //console.error("No site, page or post description found.");
+      console.error("No site, page or post description found.");
     }
   }
   if (field === "site_description") {
     try {
       return data.site_settings.site_description;
     } catch (error) {
-      //console.error("No site, page or post description found.");
+      console.error("No site, page or post description found.");
     }
     return "";
   }
@@ -254,27 +254,6 @@ const cleanUrl = function (url) {
   return url;
 };
 
-/**
- * Get the njk template that corresponds to settings from the API
- * @param {*} data
- * @returns
- */
-const chooseTemplate = function (data) {
-  // Get value set in API for headless design system
-  let template = data.design_system_fields.template;
-  // Handle errors
-  if (template === undefined || template === null) {
-    if (data.type === "post") {
-      return "post";
-    } else if (data.type === "page") {
-      return "page";
-    }
-    return "page";
-  }
-  // Return template set by editor
-  return template;
-}
-exports.chooseTemplate = chooseTemplate;
 exports.getHeadMetaTags = getHeadMetaTags;
 exports.getOGMetaData = getOGMetaData;
 exports.getMetaTagValue = getMetaTagValue;
