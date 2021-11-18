@@ -1,7 +1,8 @@
 // fetch header, footer and content menus
 
 const fetch = require('node-fetch')
-let urlBase = 'https://live-drought-ca-gov.pantheonsite.io/wp-json/menus/v1/menus'; // @TODO use config @ISSUE
+// @todo This value should be pulled from odi-publishing/config.js 
+let urlBase = 'https://dev-sand-ca-gov.pantheonsite.io/wp-json/menus/v1/menus';
 module.exports = function () {
   return new Promise((resolve, reject) => {
     fetch(urlBase)

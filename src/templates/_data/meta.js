@@ -4,7 +4,7 @@
  * Compatible with:
  *   * [ca-design-system-gutenberg-blocks](https://github.com/cagov/ca-design-system-gutenberg-blocks) plugin `1.1.0`
  */
-const odiPublishing = require("./../../../odi-publishing/config.js");
+const odiPublishing = require("../../../odi-publishing/config.js");
 const config = odiPublishing.getConfig();
 
 const getHeadMetaTags = function (item) {
@@ -243,8 +243,8 @@ const cleanUrl = function (url) {
       if (url.indexOf(".pantheonsite.io/") > -1) {
         return url.split(".pantheonsite.io/")[1];
       }
-      if (url.indexOf("drought.ca.gov") > -1) {
-        return url.split("drought.ca.gov")[1];
+      if (url.indexOf(config.data.url_short) > -1) {
+        return url.split(config.data.url_short)[1];
       }
     }
   } catch (error) {
