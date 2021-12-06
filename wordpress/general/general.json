@@ -1,26 +1,27 @@
 {
   "meta": {
     "api_version": "v2",
-    "api_url": "https://live-cagov-dcc.pantheonsite.io/wp-json/wp/v2/",
+    "api_url": "https://dev-sand-ca-gov.pantheonsite.io//wp-json/wp/v2/",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://live-cagov-dcc.pantheonsite.io",
+      "source_data": "https://dev-sand-ca-gov.pantheonsite.io/",
       "deployment_target": "https://github.com/cagov/odi-publishing-11ty-sandbox/tree/main"
     },
     "refresh_frequency": "as needed"
   },
   "data": {
-    "name": "Department of Cannabis Control",
-    "description": "Learn about California cannabis laws and licenses",
-    "url": "https://live-cagov-dcc.pantheonsite.io",
-    "home": "https://live-cagov-dcc.pantheonsite.io",
+    "name": "Publishing Sandbox",
+    "description": "A sandbox for publishing",
+    "url": "https://dev-sand-ca-gov.pantheonsite.io",
+    "home": "https://dev-sand-ca-gov.pantheonsite.io",
     "gmt_offset": -8,
     "timezone_string": "America/Los_Angeles",
     "namespaces": [
       "oembed/1.0",
       "redirection/v1",
       "menus/v1",
-      "divi/v1",
+      "generatepress/v1",
+      "notification/v1",
       "wp/v2",
       "wp-site-health/v1"
     ]
