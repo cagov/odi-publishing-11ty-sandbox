@@ -1,0 +1,52 @@
+{
+  "plugin": {
+    "version": "5.1.3",
+    "date": "Tue, 07 Dec 2021 19:48:00 +0000"
+  },
+  "groups": [
+    {
+      "id": 1,
+      "name": "Redirections",
+      "redirects": 1,
+      "module_id": 1,
+      "moduleName": "WordPress",
+      "enabled": true
+    },
+    {
+      "id": 2,
+      "name": "Modified Posts",
+      "redirects": 0,
+      "module_id": 1,
+      "moduleName": "WordPress",
+      "enabled": true
+    }
+  ],
+  "redirects": [
+    {
+      "id": 1,
+      "url": "/test",
+      "match_url": "/test",
+      "match_data": {
+        "source": {
+          "flag_query": "exact",
+          "flag_case": false,
+          "flag_trailing": false,
+          "flag_regex": false
+        }
+      },
+      "action_code": 301,
+      "action_type": "url",
+      "action_data": {
+        "url": "https://google.com"
+      },
+      "match_type": "url",
+      "title": "",
+      "hits": 1,
+      "regex": false,
+      "group_id": 1,
+      "position": 0,
+      "last_access": "December 7, 2021",
+      "enabled": true
+    }
+  ]
+}
