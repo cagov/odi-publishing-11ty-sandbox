@@ -1,29 +1,29 @@
 {
   "meta": {
-    "created_date": "2021-11-17T22:53:53",
-    "updated_date": "2021-11-17T22:53:54",
+    "created_date": "2021-12-07T00:10:46",
+    "updated_date": "2021-12-07T00:10:47",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/posts/",
     "api_version": "v2",
-    "api_url": "https://dev-sand-ca-gov.pantheonsite.io//wp-json/wp/v2/",
+    "api_url": "https://dev-sand-ca-gov.pantheonsite.io/wp-json/wp/v2/",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://dev-sand-ca-gov.pantheonsite.io/",
+      "source_data": "https://dev-sand-ca-gov.pantheonsite.io",
       "deployment_target": "https://github.com/cagov/odi-publishing-11ty-sandbox/tree/main"
     },
     "refresh_frequency": "as needed"
   },
   "data": {
-    "id": 1012,
-    "date": "2021-11-17T14:53:53",
-    "date_gmt": "2021-11-17T22:53:53",
-    "guid": "https://dev-sand-ca-gov.pantheonsite.io/?p=1012",
-    "modified": "2021-11-17T14:53:54",
-    "modified_gmt": "2021-11-17T22:53:54",
-    "slug": "test-956",
+    "id": 1213,
+    "date": "2021-12-06T16:10:46",
+    "date_gmt": "2021-12-07T00:10:46",
+    "guid": "https://dev-sand-ca-gov.pantheonsite.io/?p=1213",
+    "modified": "2021-12-06T16:10:47",
+    "modified_gmt": "2021-12-07T00:10:47",
+    "slug": "ca-drought-update-archive",
     "status": "publish",
     "type": "post",
-    "link": "https://dev-sand-ca-gov.pantheonsite.io/test-956/",
-    "title": "test-956",
+    "link": "https://dev-sand-ca-gov.pantheonsite.io/ca-drought-update-archive/",
+    "title": "ca-drought-update-archive/",
     "excerpt": "",
     "author": "Zakiya",
     "featured_media": 0,
@@ -32,11 +32,7 @@
     "sticky": false,
     "template": "",
     "format": "standard",
-    "meta": {
-      "custom_post_link": "",
-      "custom_post_date": "",
-      "custom_post_location": ""
-    },
+    "meta": [],
     "categories": [
       "Uncategorized"
     ],
@@ -55,19 +51,19 @@
       "site_name": "Publishing Sandbox",
       "site_description": "A sandbox for publishing",
       "site_url": "https://dev-sand-ca-gov.pantheonsite.io",
-      "canonical_url": "https://dev-sand-ca-gov.pantheonsite.io/test-956/",
-      "page_title": "test-956",
+      "canonical_url": "https://dev-sand-ca-gov.pantheonsite.io/ca-drought-update-archive/",
+      "page_title": "ca-drought-update-archive/",
       "page_description": "A sandbox for publishing",
       "page_social_image_url": "https://live-drought-ca-gov.pantheonsite.io/wp-content/uploads/2021/07/cropped-2021_06_23_FL_0494_Folsom_Lake.jpg",
       "page_social_image_width": 1200,
       "page_social_image_height": 630,
       "page_social_image_alt": "",
-      "meta_title": "test-956",
+      "meta_title": "ca-drought-update-archive/",
       "meta_description": "A sandbox for publishing",
-      "meta_canonical_url": "https://dev-sand-ca-gov.pantheonsite.io/test-956/",
-      "open_graph_title": "test-956",
+      "meta_canonical_url": "https://dev-sand-ca-gov.pantheonsite.io/ca-drought-update-archive/",
+      "open_graph_title": "ca-drought-update-archive/",
       "open_graph_description": "A sandbox for publishing",
-      "twitter_title": "test-956",
+      "twitter_title": "ca-drought-update-archive/",
       "twitter_description": "A sandbox for publishing"
     },
     "headless_categories": [
@@ -91,7 +87,14 @@
     "headless_tags": [],
     "headless_publishing": [],
     "headless_preview": [],
+    "event": null,
     "custom_post_date": "",
-    "wordpress_url": "https://dev-sand-ca-gov.pantheonsite.io/test-956/"
+    "meta_": {
+      "0": "",
+      "custom_post_link": "",
+      "custom_post_date": "",
+      "custom_post_location": ""
+    },
+    "wordpress_url": "https://dev-sand-ca-gov.pantheonsite.io/ca-drought-update-archive/"
   }
 }
