@@ -1,7 +1,7 @@
 {
   "meta": {
     "created_date": "2021-12-07T20:02:02",
-    "updated_date": "2021-12-10T19:10:05",
+    "updated_date": "2021-12-10T19:26:48",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/posts/",
     "api_version": "v2",
     "api_url": "https://dev-sand-ca-gov.pantheonsite.io/wp-json/wp/v2/",
@@ -17,8 +17,8 @@
     "date": "2021-12-07T12:02:02",
     "date_gmt": "2021-12-07T20:02:02",
     "guid": "https://dev-sand-ca-gov.pantheonsite.io/?p=1227",
-    "modified": "2021-12-10T11:10:05",
-    "modified_gmt": "2021-12-10T19:10:05",
+    "modified": "2021-12-10T11:26:48",
+    "modified_gmt": "2021-12-10T19:26:48",
     "slug": "test-52",
     "status": "publish",
     "type": "post",
