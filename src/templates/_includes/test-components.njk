@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{ og_meta.page_title | safe }}</title>
+        {% set css %}
+        {% include "../../../dist/index.css" %}
+        {% endset %}
+        <style>
+            {{css | cssmin | safe}}
+        </style>
+    </head>
+    <body>
+        <h1 class="page-title">{{ title | safe }}</h1>
+        {{ content | safe }}
+    </body>
+    {% set js %}
+    {% include "../../../dist/built.js" %}
+    {% endset %}
+    <script type="module">
+        {{ js | safe }}
+    </script>
+</body>
