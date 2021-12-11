@@ -1,10 +1,37 @@
 Test Components
 
-1. ./package.json     "@cagov/ds-accordion": "^1.0.8",
-2. ./wordpress/posts/test-components-accordion.html [add markup]
-3. ./wordpress/posts/test-components-accordion.json [check template field]
-4. ./src/js/index-headless.js import '@cagov/ds-accordion';
-5. ./src/templates/_includes/layouts/index.njk [has include statement]
-- ./src/templates/_includes/test-components.njk [prints page]
-6. npm run build
-7. open ./docs/test-accordion/index.html in browser
+```bash
+MACHINENAME=ds-agency-footer
+
+npm install @cagov/$MACHINENAME@latest`
+
+cp node_modules/@cagov/MACHINENAME/template.html wordpress/posts/test-components--$MACHINENAME.html
+
+cp wordpress/posts/test-components-accordion.json /wordpress/posts/test-components--$MACHINENAME.json
+
+echo "change wordpress_url"
+
+code wordpress/posts/test-components--$MACHINENAME.json
+
+echo "update fields in test-components--$MACHINENAME.json"
+
+code src/js/index-headless.js
+
+# if js
+printf "import '@cagov/%s';" $MACHINENAME > src/js/index-headless.js
+
+#else
+printf "" > src/js/index-headless.js
+
+printf "@import '../../../node_modules/@cagov/%s/src/index.scss';" $MACHINENAME > src/css/sass/index.scss
+
+npm run build
+
+open -a chrome docs/test-components--$MACHINENAME/index.html
+
+```
+
+
+Also noteworthy:
+- ./src/templates/_includes/layouts/index.njk 
+- ./src/templates/_includes/test-components.njk 
