@@ -1,1 +1,1 @@
-import '@cagov/ds-accordion';
+import '@cagov/ds-back-to-top';

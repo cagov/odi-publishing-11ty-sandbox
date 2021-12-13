@@ -1,33 +1,33 @@
 Test Components
 
 ```bash
-MACHINENAME=ds-agency-footer
+MACHINENAME=back-to-top
+DSNAME=ds-$MACHINENAME
 
-npm install @cagov/$MACHINENAME@latest`
+npm install @cagov/$DSNAME@latest
 
-cp node_modules/@cagov/MACHINENAME/template.html wordpress/posts/test-components--$MACHINENAME.html
+cp node_modules/@cagov/$DSNAME/template.html wordpress/posts/test-components--$DSNAME.html
 
-cp wordpress/posts/test-components-accordion.json /wordpress/posts/test-components--$MACHINENAME.json
+cp wordpress/posts/test-components-accordion.json wordpress/posts/test-components--$DSNAME.json
 
-echo "change wordpress_url"
+code wordpress/posts/test-components--$DSNAME.json
 
-code wordpress/posts/test-components--$MACHINENAME.json
+echo "change wordpress_url to test-components--ds-back-to-top"
+echo "change page_title to 'Back to top' "
 
-echo "update fields in test-components--$MACHINENAME.json"
-
-code src/js/index-headless.js
+# echo "update fields in test-components--$DSNAME.json"
 
 # if js
-printf "import '@cagov/%s';" $MACHINENAME > src/js/index-headless.js
+printf "import '@cagov/%s';\n" $DSNAME > src/js/index-headless.js
 
 #else
 printf "" > src/js/index-headless.js
 
-printf "@import '../../../node_modules/@cagov/%s/src/index.scss';" $MACHINENAME > src/css/sass/index.scss
+printf "@import '../../../node_modules/@cagov/%s/src/index.scss';\n" $DSNAME > src/css/sass/index.scss
 
 npm run build
 
-open -a chrome docs/test-components--$MACHINENAME/index.html
+open -a chrome docs/test-components--$DSNAME/index.html
 
 ```
 
