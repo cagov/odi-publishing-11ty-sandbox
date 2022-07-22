@@ -14,7 +14,7 @@
     "description": "A sandbox for publishing",
     "url": "https://dev-sand-ca-gov.pantheonsite.io",
     "home": "https://dev-sand-ca-gov.pantheonsite.io",
-    "gmt_offset": -8,
+    "gmt_offset": -7,
     "timezone_string": "America/Los_Angeles",
     "namespaces": [
       "oembed/1.0",
