@@ -29,13 +29,13 @@ jobs:
         run: |
           mkdir dist
           npm install
-          SITE_ENV=production DOMAIN=example.ca.gov npm run build
+          SITE_ENV=production DOMAIN=odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com npm run build
           # npm run test:setup
       - name: Write robots.txt
         run: |
           echo 'User-agent: *' > docs/robots.txt
           echo 'Allow: /' >> docs/robots.txt
-          echo 'Sitemap: https://example.ca.gov/sitemap.xml' >> docs/robots.txt
+          echo 'Sitemap: https://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com/sitemap.xml' >> docs/robots.txt
       # deploy built files to separate branch that contains only built files that github pages uses to serve site
       - name: Deploy to github pages branch
         uses: peaceiris/actions-gh-pages@v3
@@ -52,9 +52,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
 
-      # Deploy to example.ca.gov
-      - name: Deploy to S3 (example.ca.gov)
-        run: aws s3 sync --follow-symlinks --delete ./docs s3://example.ca.gov
+      # Deploy to odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com
+      - name: Deploy to S3 (odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com)
+        run: aws s3 sync --follow-symlinks --delete ./docs s3://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com
       # Reset the cache-control headers on static assets on production S3 bucket
       - name: Reset cache-control on fonts
         uses: prewk/s3-cp-action@v2
@@ -63,7 +63,7 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: 'us-west-1'   # optional: defaults to us-east-1
           source: './docs/fonts'
-          dest: 's3://example.ca.gov/fonts'
+          dest: 's3://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com/fonts'
           flags: --recursive --cache-control max-age=15552000
       - name: Reset cache-control on assets
         uses: prewk/s3-cp-action@v2
@@ -72,7 +72,7 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: 'us-west-1'   # optional: defaults to us-east-1
           source: './docs/assets'
-          dest: 's3://example.ca.gov/assets'
+          dest: 's3://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com/assets'
           flags: --recursive --cache-control max-age=15552000
       - name: Reset cache-control on media
         uses: prewk/s3-cp-action@v2
@@ -81,11 +81,11 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: 'us-west-1'   # optional: defaults to us-east-1
           source: './docs/wp-content/uploads/sites/2'
-          dest: 's3://example.ca.gov/wp-content/uploads/sites/2'
+          dest: 's3://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com/wp-content/uploads/sites/2'
           flags: --recursive --cache-control max-age=15552000
 
 
-      - name: Invalidate Cloudfront (example.ca.gov)
+      - name: Invalidate Cloudfront (odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com)
         run: aws cloudfront create-invalidation --distribution-id XXXXXXXXXX --paths "/*"
 
       - name: Deploy redirects
