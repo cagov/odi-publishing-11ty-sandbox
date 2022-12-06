@@ -37,7 +37,7 @@ jobs:
       - name: Write robots.txt
         run: |
           echo 'User-agent: *' > docs/robots.txt
-          echo 'Allow: /' >> docs/robots.txt
+          echo 'Disallow: /' >> docs/robots.txt
           echo 'Sitemap: https://odi-publishing-11ty-sandbox.ca.gov/sitemap.xml' >> docs/robots.txt
       # deploy built files to separate branch that contains only built files that github pages uses to serve site
       - name: Deploy to github pages branch
