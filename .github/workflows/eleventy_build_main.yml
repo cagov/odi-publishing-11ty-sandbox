@@ -27,7 +27,7 @@ jobs:
       - name: Build 11ty
         run: |
           mkdir dist
-          npm install
+          npm ci
           SITE_ENV=production DOMAIN=odi-publishing-11ty-sandbox.ca.gov npm run build
           # npm run test:setup
       - name: Write robots.txt
