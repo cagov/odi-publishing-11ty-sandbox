@@ -1,7 +1,8 @@
 name: 11ty build Production Site
-# site:  
-# s3 bucket 
-# editor: 
+# site: http://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com/
+# s3 bucket: odi-publishing-11ty-sandbox.ca.gov
+# editor: https://editor-dev-cannabis-ca-gov.pantheonsite.io/
+
 on:
   workflow_run:
     workflows: ["Update static content [main]"]
@@ -11,6 +12,8 @@ on:
   push:
     branches:
       - main
+
+concurrency: sequential_deployments
 
 jobs:
   build_deploy:
