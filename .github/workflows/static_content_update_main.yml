@@ -29,8 +29,6 @@ jobs:
       - name: Check for static content updates # update static content repo.
         run: |
           mkdir dist
-          npm show odi-publishing-static-test-content version
-          npm view odi-publishing-static-test-content version  
           npm i odi-publishing-static-test-content
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr
