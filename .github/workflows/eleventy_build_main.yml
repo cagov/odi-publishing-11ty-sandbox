@@ -21,10 +21,6 @@ jobs:
   build_deploy:
     runs-on: ubuntu-20.04
     steps:
-      # - name: Cancel previous build
-      #   uses: n1hility/cancel-previous-runs@v2
-      #   with: 
-      #     token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@v3
 
       - name: Use Node.js 16.x
@@ -34,6 +30,7 @@ jobs:
       - name: Build 11ty
         run: |
           mkdir dist
+          npm update odi-publishing-static-test-content
           npm ci
           npm set progress=false
           SITE_ENV=production DOMAIN=odi-publishing-11ty-sandbox.ca.gov npm run build
