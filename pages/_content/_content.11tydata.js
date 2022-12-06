@@ -25,12 +25,7 @@ const config = require("../../config/index.js");
  const getRelativePath = (url) => {
   try {    
       config.build.replace_urls.forEach((domain) => {
-        if(url.indexOf("homepage") > -1) {
-          console.log(">>", url, "<<");
-        }
-        // console.log(domain);
         url = url.replace(domain, "");
-        // console.log(">", url, "<");
         return false;
       });
       return url;
