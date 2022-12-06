@@ -4,12 +4,12 @@
     "updated_date": "2022-04-23T01:22:38",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/media/",
     "api_version": "v2",
-    "api_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/",
-    "object_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/media/9708",
+    "api_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/",
+    "object_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/media/9708",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://api.cannabis.ca.gov",
-      "deployment_target": "https://github.com/cagov/static-content-cannabis/tree/main"
+      "source_data": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
+      "deployment_target": "https://github.com/cagov/odi-publishing-static-test-content/tree/main"
     },
     "refresh_frequency": "as needed"
   },
@@ -23,7 +23,7 @@
     "slug": "equity-fee-waivers-and-deferrals-v4-low",
     "status": "inherit",
     "type": "attachment",
-    "link": "https://api.cannabis.ca.gov/equity-fee-waivers-and-deferrals-v4-low/",
+    "link": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/equity-fee-waivers-and-deferrals-v4-low/",
     "title": "Equity Fee Waivers and Deferrals v4 (Low)",
     "comment_status": "closed",
     "ping_status": "closed",
@@ -35,8 +35,8 @@
     "categories": [
       14
     ],
-    "description": "<div style=\"width: 960px;\" class=\"wp-video\"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->\n<video class=\"wp-video-shortcode\" id=\"video-9708-1\" width=\"960\" height=\"540\" preload=\"metadata\" controls=\"controls\"><source type=\"video/mp4\" src=\"https://api.cannabis.ca.gov/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4?_=1\" /><a href=\"https://api.cannabis.ca.gov/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4\">https://api.cannabis.ca.gov/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4</a></video></div>\n",
-    "caption": "<p>https://api.cannabis.ca.gov/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4</p>\n",
+    "description": "<div style=\"width: 960px;\" class=\"wp-video\"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->\n<video class=\"wp-video-shortcode\" id=\"video-9708-1\" width=\"960\" height=\"540\" preload=\"metadata\" controls=\"controls\"><source type=\"video/mp4\" src=\"https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4?_=1\" /><a href=\"https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4\">https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4</a></video></div>\n",
+    "caption": "<p>https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4</p>\n",
     "alt_text": "",
     "media_type": "file",
     "mime_type": "video/mp4",
@@ -62,8 +62,8 @@
       "sizes": {}
     },
     "post": null,
-    "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4",
-    "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4",
+    "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4",
+    "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4",
     "path": "2022/04/Equity-Fee-Waivers-and-Deferrals-v4-Low.mp4"
   }
 }

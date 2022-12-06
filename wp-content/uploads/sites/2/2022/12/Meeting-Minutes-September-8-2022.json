@@ -4,12 +4,12 @@
     "updated_date": "2022-12-05T22:28:23",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/media/",
     "api_version": "v2",
-    "api_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/",
-    "object_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/media/12516",
+    "api_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/",
+    "object_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/media/12516",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://api.cannabis.ca.gov",
-      "deployment_target": "https://github.com/cagov/static-content-cannabis/tree/main"
+      "source_data": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
+      "deployment_target": "https://github.com/cagov/odi-publishing-static-test-content/tree/main"
     },
     "refresh_frequency": "as needed"
   },
@@ -17,13 +17,13 @@
     "id": 12516,
     "date": "2022-12-05T14:28:23",
     "date_gmt": "2022-12-05T22:28:23",
-    "guid": "https://api.cannabis.ca.gov/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf",
+    "guid": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf",
     "modified": "2022-12-05T14:28:23",
     "modified_gmt": "2022-12-05T22:28:23",
     "slug": "meeting-minutes-september-8-2022",
     "status": "inherit",
     "type": "attachment",
-    "link": "https://api.cannabis.ca.gov/meeting-minutes-september-8-2022/",
+    "link": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/meeting-minutes-september-8-2022/",
     "title": "Meeting Minutes -September 8, 2022",
     "comment_status": "closed",
     "ping_status": "closed",
@@ -35,7 +35,7 @@
     "categories": [
       14
     ],
-    "description": "<p class=\"attachment\"><a href='https://api.cannabis.ca.gov/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf'>Meeting Minutes -September 8, 2022</a></p>\n",
+    "description": "<p class=\"attachment\"><a href='https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf'>Meeting Minutes -September 8, 2022</a></p>\n",
     "caption": "<p>Meeting Minutes -September 8, 2022</p>\n",
     "alt_text": "",
     "media_type": "file",
@@ -45,8 +45,8 @@
       "sizes": {}
     },
     "post": null,
-    "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf",
-    "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf",
+    "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf",
+    "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/12/Meeting-Minutes-September-8-2022.pdf",
     "path": "2022/12/Meeting-Minutes-September-8-2022.pdf"
   }
 }

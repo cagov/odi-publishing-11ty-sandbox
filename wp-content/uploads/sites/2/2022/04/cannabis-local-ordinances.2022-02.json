@@ -4,12 +4,12 @@
     "updated_date": "2022-11-28T22:37:08",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/media/",
     "api_version": "v2",
-    "api_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/",
-    "object_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/media/9697",
+    "api_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/",
+    "object_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/media/9697",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://api.cannabis.ca.gov",
-      "deployment_target": "https://github.com/cagov/static-content-cannabis/tree/main"
+      "source_data": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
+      "deployment_target": "https://github.com/cagov/odi-publishing-static-test-content/tree/main"
     },
     "refresh_frequency": "as needed"
   },
@@ -23,7 +23,7 @@
     "slug": "cannabis-local-ordinances-2022-02",
     "status": "inherit",
     "type": "attachment",
-    "link": "https://api.cannabis.ca.gov/cannabis-local-ordinances-2022-02/",
+    "link": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/cannabis-local-ordinances-2022-02/",
     "title": "cannabis-local-ordinances.2022-02",
     "author": "Department of Cannabis Control",
     "comment_status": "closed",
@@ -36,7 +36,7 @@
     "categories": [
       794
     ],
-    "description": "<p class=\"attachment\"><a href='https://api.cannabis.ca.gov/wp-content/uploads/2022/04/cannabis-local-ordinances.2022-02.csv'>cannabis-local-ordinances.2022-02</a></p>\n",
+    "description": "<p class=\"attachment\"><a href='https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/cannabis-local-ordinances.2022-02.csv'>cannabis-local-ordinances.2022-02</a></p>\n",
     "caption": "<p>cannabis-local-ordinances.2022-02</p>\n",
     "alt_text": "",
     "media_type": "file",
@@ -46,8 +46,8 @@
       "sizes": {}
     },
     "post": null,
-    "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/04/cannabis-local-ordinances.2022-02.csv",
-    "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/04/cannabis-local-ordinances.2022-02.csv",
+    "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/cannabis-local-ordinances.2022-02.csv",
+    "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/04/cannabis-local-ordinances.2022-02.csv",
     "path": "2022/04/cannabis-local-ordinances.2022-02.csv"
   }
 }

@@ -4,12 +4,12 @@
     "updated_date": "2022-09-30T16:07:58",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/media/",
     "api_version": "v2",
-    "api_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/",
-    "object_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/media/11461",
+    "api_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/",
+    "object_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/media/11461",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://api.cannabis.ca.gov",
-      "deployment_target": "https://github.com/cagov/static-content-cannabis/tree/main"
+      "source_data": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
+      "deployment_target": "https://github.com/cagov/odi-publishing-static-test-content/tree/main"
     },
     "refresh_frequency": "as needed"
   },
@@ -17,13 +17,13 @@
     "id": 11461,
     "date": "2022-09-30T09:07:58",
     "date_gmt": "2022-09-30T16:07:58",
-    "guid": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
+    "guid": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
     "modified": "2022-09-30T09:07:58",
     "modified_gmt": "2022-09-30T16:07:58",
     "slug": "about-dcc-2",
     "status": "inherit",
     "type": "attachment",
-    "link": "https://api.cannabis.ca.gov/about-dcc-2/",
+    "link": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/about-dcc-2/",
     "title": "About DCC",
     "author": "Chach Sikes",
     "comment_status": "closed",
@@ -36,8 +36,8 @@
     "categories": [
       14
     ],
-    "description": "<p class=\"attachment\"><a href='https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png'><img width=\"576\" height=\"303\" src=\"https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png\" class=\"attachment-medium size-medium\" alt=\"Purple rectangle reading &quot;Placeholder&quot;\" loading=\"lazy\" srcset=\"https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png 576w, https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png 1024w, https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png 768w, https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png 1142w\" sizes=\"(max-width: 576px) 100vw, 576px\" /></a></p>\n<p>https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png</p>\n",
-    "caption": "<p>https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png</p>\n",
+    "description": "<p class=\"attachment\"><a href='https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png'><img width=\"576\" height=\"303\" src=\"https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png\" class=\"attachment-medium size-medium\" alt=\"Purple rectangle reading &quot;Placeholder&quot;\" decoding=\"async\" loading=\"lazy\" srcset=\"https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png 576w, https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png 1024w, https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png 768w, https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png 1142w\" sizes=\"(max-width: 576px) 100vw, 576px\" /></a></p>\n<p>https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png</p>\n",
+    "caption": "<p>https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png</p>\n",
     "alt_text": "Purple rectangle reading \"Placeholder\"",
     "media_type": "image",
     "mime_type": "image/png",
@@ -53,7 +53,7 @@
           "height": 303,
           "filesize": 995,
           "mime_type": "image/png",
-          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png"
+          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png"
         },
         "large": {
           "file": "cropped-test-social-media-graphic-1024x538.png",
@@ -61,7 +61,7 @@
           "height": 538,
           "filesize": 2086,
           "mime_type": "image/png",
-          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png"
+          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png"
         },
         "thumbnail": {
           "file": "cropped-test-social-media-graphic-376x376.png",
@@ -69,7 +69,7 @@
           "height": 376,
           "filesize": 1233,
           "mime_type": "image/png",
-          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-376x376.png"
+          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-376x376.png"
         },
         "medium_large": {
           "file": "cropped-test-social-media-graphic-768x404.png",
@@ -77,14 +77,14 @@
           "height": 404,
           "filesize": 1480,
           "mime_type": "image/png",
-          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png"
+          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png"
         },
         "full": {
           "file": "cropped-test-social-media-graphic.png",
           "width": 1142,
           "height": 600,
           "mime_type": "image/png",
-          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png"
+          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png"
         }
       },
       "image_meta": {
@@ -103,62 +103,62 @@
       }
     },
     "post": null,
-    "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
-    "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
+    "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
+    "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
     "sizes": [
       {
         "type": "full",
         "path": "2022/09/cropped-test-social-media-graphic.png",
-        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
+        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png",
         "file": "cropped-test-social-media-graphic.png",
         "width": 1142,
         "height": 600,
         "mime_type": "image/png",
-        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png"
+        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic.png"
       },
       {
         "type": "large",
         "path": "2022/09/cropped-test-social-media-graphic-1024x538.png",
-        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png",
+        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png",
         "file": "cropped-test-social-media-graphic-1024x538.png",
         "width": 1024,
         "height": 538,
         "filesize": 2086,
         "mime_type": "image/png",
-        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png"
+        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-1024x538.png"
       },
       {
         "type": "medium_large",
         "path": "2022/09/cropped-test-social-media-graphic-768x404.png",
-        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png",
+        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png",
         "file": "cropped-test-social-media-graphic-768x404.png",
         "width": 768,
         "height": 404,
         "filesize": 1480,
         "mime_type": "image/png",
-        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png"
+        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-768x404.png"
       },
       {
         "type": "medium",
         "path": "2022/09/cropped-test-social-media-graphic-576x303.png",
-        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png",
+        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png",
         "file": "cropped-test-social-media-graphic-576x303.png",
         "width": 576,
         "height": 303,
         "filesize": 995,
         "mime_type": "image/png",
-        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png"
+        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-576x303.png"
       },
       {
         "type": "thumbnail",
         "path": "2022/09/cropped-test-social-media-graphic-376x376.png",
-        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-376x376.png",
+        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-376x376.png",
         "file": "cropped-test-social-media-graphic-376x376.png",
         "width": 376,
         "height": 376,
         "filesize": 1233,
         "mime_type": "image/png",
-        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/cropped-test-social-media-graphic-376x376.png"
+        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/cropped-test-social-media-graphic-376x376.png"
       }
     ],
     "path": "2022/09/cropped-test-social-media-graphic.png"
