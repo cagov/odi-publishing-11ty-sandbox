@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "name": "example.ca.gov - Office of Data and Innovation",
+    "gitrepo": "@cagov/example.ca.gov",
+    "contact": {
+        "maintainer": "Office of Data and Innovation"
+    },
+    "page_metadata": {
+        "en": {
+            "site_url": "https://example.ca.gov",
+            "site_name": "Office of Data and Innovation",
+            "site_default_description": "ODI Publishing test instance",
+            "page_default_open_graph_image_url": "./assets/default-social-media-image.png",
+            "page_default_open_graph_image_alt": "Office of Data and Innovation",
+            "page_default_open_graph_image_width": 1200,
+            "page_default_open_graph_image_height": 630,
+            "gov_name": "CA.GOV",
+            "gov_url": "https:\/\/ca.gov",
+            "favicon": "/assets/cagov_favicon.ico",
+            "page_icon": "/assets/img/cagov_favicon_16x16.png",
+            "keywords": "California, government"
+        }
+    },
+    "locales": {
+        "en": "English"
+    },
+    "extensions": {
+        "page-feedback": {
+            "endpoint": "https://fa-go-feedback-001.azurewebsites.net/sendfeedback"
+        }
+    },
+    "build": {
+        "eleventy_input": "pages",
+        "eleventy_output": "docs",
+        "eleventy_layouts": "_includes/layouts",
+        "eleventy_content": "pages/_content",
+        "eleventy_pages": "pages/_content/pages",
+        "eleventy_posts": "pages/_content/posts",
+        "eleventy_menu": "pages/_content/menu",
+        "eleventy_redirects": "pages/_content/redirects",
+        "docs_media": "wp-content/uploads/sites/2",
+        "upload_folder": "wp-content/uploads/",
+        "replace_urls": [
+            "http://example.ca.gov",
+            "http://wordpress.test:8888"
+        ],
+        "media_replace_urls": [
+            "http://example.ca.gov/wp-content/uploads/",
+            "https://example.ca.gov/wp-content/uploads/sites/2/",
+            "https://example.ca.gov/wp-content/uploads/",
+            "https://api.example.ca.gov/wp-content/uploads/sites/2/",
+            "https://api.example.ca.gov/wp-content/uploads/",
+            "https://headless.example.ca.gov/wp-content/uploads/sites/2/",
+            "https://headless.example.ca.gov/wp-content/uploads/",
+            "https://staging.example.ca.gov/wp-content/uploads/sites/2/",
+            "https://staging.example.ca.gov/wp-content/uploads/",
+            "http://localhost:8080/wp-content/uploads/sites/2/",
+            "http://localhost:8080/wp-content/uploads/",
+            "https://live-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
+            "https://test-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
+            "https://dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
+            "https://dev-cagov-dcc.pantheonsite.io/wp-content/uploads/",
+            "http://wordpress.test:8888/wp-content/uploads/"
+        ],
+        "editor_url": "https://api.example.ca.gov",
+        "canonical_site_url": "https://example.ca.gov",
+        "host_name": "example.ca.gov"
+    }
+}
