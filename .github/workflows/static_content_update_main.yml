@@ -5,6 +5,8 @@ on:
   repository_dispatch:
     types: [static_content_update_main]
 
+concurrency: sequential_static_content_update_main
+
 jobs:
   build_deploy:
     runs-on: ubuntu-20.04
