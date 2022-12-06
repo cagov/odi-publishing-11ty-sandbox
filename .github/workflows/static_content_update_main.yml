@@ -11,14 +11,26 @@ jobs:
   build_deploy:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      # - uses: actions/checkout@v3
+      - name: "Partially checkout source code"
+        run: |
+          REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git config --global user.email github-actions@github.com
+          git config --global user.name github-actions
+          git clone --filter=blob:none --no-checkout --depth 1  --sparse $REPO .
+          git sparse-checkout init --cone
+          git sparse-checkout add "package.json" "package-lock.json"
+          git checkout
+      
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Check for static content updates # update static content repo.
         run: |
           mkdir dist
+          npm show odi-publishing-static-test-content version
+          npm view odi-publishing-static-test-content version  
           npm i odi-publishing-static-test-content
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr

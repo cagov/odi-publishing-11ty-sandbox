@@ -19,13 +19,14 @@ jobs:
   build_deploy:
     runs-on: ubuntu-20.04
     steps:
-      - name: Cancel previous build
-        uses: n1hility/cancel-previous-runs@v2
-        with: 
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/checkout@master
+      # - name: Cancel previous build
+      #   uses: n1hility/cancel-previous-runs@v2
+      #   with: 
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Build 11ty
@@ -36,7 +37,7 @@ jobs:
           # npm run test:setup
       - name: Write robots.txt
         run: |
-          echo 'User-agent: *' > docs/robots.txt
+          echo 'User-agent: *' > docs/robots.txt 
           echo 'Disallow: /' >> docs/robots.txt
           echo 'Sitemap: https://odi-publishing-11ty-sandbox.ca.gov/sitemap.xml' >> docs/robots.txt
       # deploy built files to separate branch that contains only built files that github pages uses to serve site
@@ -54,7 +55,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
-
+          node-version: 16.x
       # Deploy to odi-publishing-11ty-sandbox.ca.gov
       - name: Deploy to S3 (odi-publishing-11ty-sandbox.ca.gov)
         run: aws s3 sync --follow-symlinks --delete ./docs s3://odi-publishing-11ty-sandbox.ca.gov
