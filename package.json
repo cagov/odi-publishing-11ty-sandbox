@@ -7,7 +7,7 @@
     "build": "eleventy",
     "dev": "npm run site:watch:dev",
     "site:build:dev": "cross-env NODE_ENV=development SITE_ENV=localhost DOMAIN=localhost eleventy",
-    "site:build:production": "cross-env NODE_ENV=production SITE_ENV=production DOMAIN=s3bucket eleventy",
+    "site:build:production": "cross-env NODE_ENV=production SITE_ENV=production DOMAIN=odi-publishing-11ty-sandbox.ca.gov eleventy",
     "site:watch:dev": "cross-env NODE_ENV=development SITE_ENV=localhost eleventy --watch --serve --incremental",
     "site:watch": "eleventy --serve",
     "start": "npm run site:watch",
@@ -21,7 +21,7 @@
     "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
     "code:format": "npm run format:prettier --ignore-path",
     "content:clean": "rm -rf docs && rm -rf pages/_content/menu && rm -rf pages/_content/pages && rm -rf pages/_content/posts && rm -rf pages/_content/redirects",
-    "content:update": "npm update odi-publishing-static-test-content",
+    "content:update": "npm update odi-publishing-static-test-content"
   },
   "keywords": [
     "@cagov",
@@ -75,7 +75,6 @@
     "@cagov/ds-statewide-footer": "^2.0.0",
     "@cagov/ds-statewide-header": "^2.0.0",
     "@cagov/ds-step-list": "^3.0.0",
-    "@cagov/ds-table": "^1.0.1",
     "odi-publishing-static-test-content": "github:cagov/odi-publishing-static-test-content#main"
   }
 }
