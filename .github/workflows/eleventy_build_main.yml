@@ -12,8 +12,6 @@ on:
   push:
     branches:
       - main
-  repository_dispatch:
-    types: [static_content_update_main]    
 
 concurrency: sequential_deployments
 
@@ -22,7 +20,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
-
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
@@ -30,14 +27,12 @@ jobs:
       - name: Build 11ty
         run: |
           mkdir dist
-          npm update odi-publishing-static-test-content
-          npm ci
-          npm set progress=false
+          npm install
           SITE_ENV=production DOMAIN=odi-publishing-11ty-sandbox.ca.gov npm run build
           # npm run test:setup
       - name: Write robots.txt
         run: |
-          echo 'User-agent: *' > docs/robots.txt 
+          echo 'User-agent: *' > docs/robots.txt
           echo 'Disallow: /' >> docs/robots.txt
           echo 'Sitemap: https://odi-publishing-11ty-sandbox.ca.gov/sitemap.xml' >> docs/robots.txt
       # deploy built files to separate branch that contains only built files that github pages uses to serve site

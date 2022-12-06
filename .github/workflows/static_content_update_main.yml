@@ -1,65 +1,65 @@
-# name: Update static content [main]
+name: Update static content [main]
 
-# on:
-#   workflow_dispatch:
-#   repository_dispatch:
-#     types: [static_content_update_main]
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [static_content_update_main]
 
-# concurrency: sequential_static_content_update_main
+concurrency: sequential_static_content_update_main
 
-# jobs:
-#   build_deploy:
-#     runs-on: ubuntu-20.04
-#     steps:
-#       # - uses: actions/checkout@v3
-#       - name: "Partially checkout source code"
-#         run: |
-#           REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-#           git config --global user.email github-actions@github.com
-#           git config --global user.name github-actions
-#           git clone --filter=blob:none --no-checkout --depth 1  --sparse $REPO .
-#           git sparse-checkout init --cone
-#           git sparse-checkout add "package.json" "package-lock.json"
-#           git checkout
+jobs:
+  build_deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      # - uses: actions/checkout@v3
+      - name: "Partially checkout source code"
+        run: |
+          REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git config --global user.email github-actions@github.com
+          git config --global user.name github-actions
+          git clone --filter=blob:none --no-checkout --depth 1  --sparse $REPO .
+          git sparse-checkout init --cone
+          git sparse-checkout add "package.json" "package-lock.json"
+          git checkout
       
-#       - name: Use Node.js 16.x
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 16
-#       - name: Check for static content updates # update static content repo.
-#         run: |
-#           mkdir dist
-#           npm i odi-publishing-static-test-content 
-#       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
-#         id: cpr
-#         uses: peter-evans/create-pull-request@v4
-#         with:
-#           token: ${{ secrets.GITHUB_TOKEN }}
-#           committer: ${{ secrets.ODI_GITHUB_USER }} <noreply@github.com> 
-#           base: main
-#           title: "Static content update to main branch"
-#           body: |
-#             Updated static content
-#           labels: |
-#             content-update
-#             automerge
-#           commit-message: "Automated PR: Static content update"
-#           team-reviewers: |
-#             ${{ secrets.PR_REVIEWERS }}
-#       - name: Check outputs
-#         if: ${{ steps.cpr.outputs.pull-request-number }}
-#         run: |
-#           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-#           echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"  
-#       - name: Auto approve static content update changes # https://github.com/hmarr/auto-approve-action
-#         if: ${{ steps.cpr.outputs.pull-request-number }}
-#         uses: hmarr/auto-approve-action@v2
-#         with:
-#           github-token: ${{ secrets.ODI_GITHUB_TOKEN }}
-#           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-#       - id: automerge
-#         if: ${{ steps.cpr.outputs.pull-request-number }}
-#         name: Auto merge static content update
-#         uses: "pascalgn/automerge-action@v0.15.3"
-#         env:
-#           GITHUB_TOKEN: "${{ secrets.ODI_GITHUB_TOKEN }}"
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Check for static content updates # update static content repo.
+        run: |
+          mkdir dist
+          npm i odi-publishing-static-test-content 
+      - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          committer: ${{ secrets.ODI_GITHUB_USER }} <noreply@github.com> 
+          base: main
+          title: "Static content update to main branch"
+          body: |
+            Updated static content
+          labels: |
+            content-update
+            automerge
+          commit-message: "Automated PR: Static content update"
+          team-reviewers: |
+            ${{ secrets.PR_REVIEWERS }}
+      - name: Check outputs
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"  
+      - name: Auto approve static content update changes # https://github.com/hmarr/auto-approve-action
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        uses: hmarr/auto-approve-action@v2
+        with:
+          github-token: ${{ secrets.ODI_GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+      - id: automerge
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        name: Auto merge static content update
+        uses: "pascalgn/automerge-action@v0.15.3"
+        env:
+          GITHUB_TOKEN: "${{ secrets.ODI_GITHUB_TOKEN }}"
