@@ -85,8 +85,8 @@ jobs:
           flags: --recursive --cache-control max-age=15552000
 
 
-      - name: Invalidate Cloudfront (odi-publishing-11ty-sandbox.ca.gov)
-        run: aws cloudfront create-invalidation --distribution-id XXXXXXXXXX --paths "/*"
+      # - name: Invalidate Cloudfront (odi-publishing-11ty-sandbox.ca.gov)
+      #   run: aws cloudfront create-invalidation --distribution-id XXXXXXXXXX --paths "/*"
 
       - name: Deploy redirects
         run: |
