@@ -21,7 +21,7 @@
     "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
     "code:format": "npm run format:prettier --ignore-path",
     "content:clean": "rm -rf docs && rm -rf pages/_content/menu && rm -rf pages/_content/pages && rm -rf pages/_content/posts && rm -rf pages/_content/redirects",
-    "content:update": "npm update odi-publishing-static-test-content"
+    "content:update": "npm i odi-publishing-static-test-content"
   },
   "keywords": [
     "@cagov",
@@ -75,6 +75,7 @@
     "@cagov/ds-statewide-footer": "^2.0.0",
     "@cagov/ds-statewide-header": "^2.0.0",
     "@cagov/ds-step-list": "^3.0.0",
+    "@cagov/ds-table": "^1.0.0",
     "odi-publishing-static-test-content": "github:cagov/odi-publishing-static-test-content#main"
   }
 }

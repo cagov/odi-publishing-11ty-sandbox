@@ -2,9 +2,9 @@ const siteSettings = require("./config.json"); // Site config (renders in markup
 
 let staticContentPath = "./node_modules/odi-publishing-static-test-content";
 
-if (process.env.SITE_ENV === "staging") {
-  staticContentPath = "./node_modules/odi-publishing-static-test-content-staging";
-}
+// if (process.env.SITE_ENV === "staging") {
+//   staticContentPath = "./node_modules/odi-publishing-static-test-content-staging";
+// }
 
 // if (process.env.SITE_ENV === "localhost") {
   // staticContentPath = "./node_modules/odi-publishing-static-test-content-staging-debugging";
