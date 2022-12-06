@@ -34,15 +34,7 @@ const getConfig = () => {
   config.build.host_name = DOMAIN; //"example.ca.gov";
 
   if (process.env.SITE_ENV === "production") {
-    config.build.canonical_site_url = "https://example.ca.gov";
-  }
-
-  if (process.env.SITE_ENV === "headless") {
-    config.build.canonical_site_url = "https://headless.example.ca.gov";
-  }
-
-  if (process.env.SITE_ENV === "staging") {
-    config.build.canonical_site_url = "https://staging.example.ca.gov";
+    config.build.canonical_site_url = "http://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com";
   }
 
   if (process.env.SITE_ENV === "localhost") {

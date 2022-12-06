@@ -1,13 +1,13 @@
 {
     "version": "2.0.0",
-    "name": "example.ca.gov - Office of Data and Innovation",
-    "gitrepo": "@cagov/example.ca.gov",
+    "name": "odi-publishing-sandbox.ca.gov - Office of Data and Innovation",
+    "gitrepo": "@cagov/odi-publishing-11ty-sandbox",
     "contact": {
         "maintainer": "Office of Data and Innovation"
     },
     "page_metadata": {
         "en": {
-            "site_url": "https://example.ca.gov",
+            "site_url": "http://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com",
             "site_name": "Office of Data and Innovation",
             "site_default_description": "ODI Publishing test instance",
             "page_default_open_graph_image_url": "./assets/default-social-media-image.png",
@@ -41,29 +41,13 @@
         "docs_media": "wp-content/uploads/sites/2",
         "upload_folder": "wp-content/uploads/",
         "replace_urls": [
-            "http://example.ca.gov",
-            "http://wordpress.test:8888"
+            "https://editor-dev-cannabis-ca-gov.pantheonsite.io/"
         ],
         "media_replace_urls": [
-            "http://example.ca.gov/wp-content/uploads/",
-            "https://example.ca.gov/wp-content/uploads/sites/2/",
-            "https://example.ca.gov/wp-content/uploads/",
-            "https://api.example.ca.gov/wp-content/uploads/sites/2/",
-            "https://api.example.ca.gov/wp-content/uploads/",
-            "https://headless.example.ca.gov/wp-content/uploads/sites/2/",
-            "https://headless.example.ca.gov/wp-content/uploads/",
-            "https://staging.example.ca.gov/wp-content/uploads/sites/2/",
-            "https://staging.example.ca.gov/wp-content/uploads/",
-            "http://localhost:8080/wp-content/uploads/sites/2/",
-            "http://localhost:8080/wp-content/uploads/",
-            "https://live-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
-            "https://test-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
-            "https://dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
-            "https://dev-cagov-dcc.pantheonsite.io/wp-content/uploads/",
-            "http://wordpress.test:8888/wp-content/uploads/"
+            "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/"
         ],
-        "editor_url": "https://api.example.ca.gov",
-        "canonical_site_url": "https://example.ca.gov",
-        "host_name": "example.ca.gov"
+        "editor_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
+        "canonical_site_url": "http://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com",
+        "host_name": "odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com"
     }
 }
