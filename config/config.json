@@ -70,7 +70,8 @@
             "https://dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
             "https://dev-cagov-dcc.pantheonsite.io/wp-content/uploads/",
             "http://wordpress.test:8888/wp-content/uploads/",
-            "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/"
+            "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
+            "http://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com/"
         ],
         "editor_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
         "canonical_site_url": "http://odi-publishing-11ty-sandbox.ca.gov.s3-website-us-west-1.amazonaws.com",
