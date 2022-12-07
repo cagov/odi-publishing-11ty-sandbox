@@ -4,12 +4,12 @@
     "updated_date": "2022-03-17T20:49:18",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/media/",
     "api_version": "v2",
-    "api_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/",
-    "object_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/media/9554",
+    "api_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/",
+    "object_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/media/9554",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
-      "deployment_target": "https://github.com/cagov/odi-publishing-static-test-content/tree/main"
+      "source_data": "https://api.cannabis.ca.gov",
+      "deployment_target": "https://github.com/cagov/static-content-cannabis/tree/main"
     },
     "refresh_frequency": "as needed"
   },
@@ -23,7 +23,7 @@
     "slug": "rulemaking_public-comment-template_er",
     "status": "inherit",
     "type": "attachment",
-    "link": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/rulemaking_public-comment-template_er/",
+    "link": "https://api.cannabis.ca.gov/rulemaking_public-comment-template_er/",
     "title": "Rulemaking_Public comment template_ER",
     "comment_status": "closed",
     "ping_status": "closed",
@@ -35,15 +35,15 @@
     "categories": [
       14
     ],
-    "description": "<p class=\"attachment\"><a href='https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/03/Rulemaking_Public-comment-template_ER.docx'>Rulemaking_Public comment template_ER</a></p>\n",
+    "description": "<p class=\"attachment\"><a href='https://api.cannabis.ca.gov/wp-content/uploads/2022/03/Rulemaking_Public-comment-template_ER.docx'>Rulemaking_Public comment template_ER</a></p>\n",
     "caption": "<p>Rulemaking_Public comment template_ER</p>\n",
     "alt_text": "",
     "media_type": "file",
     "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "media_details": {},
     "post": null,
-    "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/03/Rulemaking_Public-comment-template_ER.docx",
-    "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/03/Rulemaking_Public-comment-template_ER.docx",
+    "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/03/Rulemaking_Public-comment-template_ER.docx",
+    "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/03/Rulemaking_Public-comment-template_ER.docx",
     "path": "2022/03/Rulemaking_Public-comment-template_ER.docx"
   }
 }

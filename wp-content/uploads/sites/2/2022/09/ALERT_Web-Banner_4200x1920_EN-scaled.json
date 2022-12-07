@@ -4,12 +4,12 @@
     "updated_date": "2022-09-06T22:47:58",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/media/",
     "api_version": "v2",
-    "api_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/",
-    "object_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/media/11427",
+    "api_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/",
+    "object_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/media/11427",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
-      "deployment_target": "https://github.com/cagov/odi-publishing-static-test-content/tree/main"
+      "source_data": "https://api.cannabis.ca.gov",
+      "deployment_target": "https://github.com/cagov/static-content-cannabis/tree/main"
     },
     "refresh_frequency": "as needed"
   },
@@ -17,13 +17,13 @@
     "id": 11427,
     "date": "2022-09-06T15:47:58",
     "date_gmt": "2022-09-06T22:47:58",
-    "guid": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN.jpg",
+    "guid": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN.jpg",
     "modified": "2022-09-06T15:47:58",
     "modified_gmt": "2022-09-06T22:47:58",
     "slug": "alert_web-banner_4200x1920_en",
     "status": "inherit",
     "type": "attachment",
-    "link": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/alert_web-banner_4200x1920_en/",
+    "link": "https://api.cannabis.ca.gov/alert_web-banner_4200x1920_en/",
     "title": "ALERT_Web Banner_4200x1920_EN",
     "author": "Chach Sikes",
     "comment_status": "closed",
@@ -36,7 +36,7 @@
     "categories": [
       14
     ],
-    "description": "<p class=\"attachment\"><a href='https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg'><img width=\"576\" height=\"263\" src=\"https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg\" class=\"attachment-medium size-medium\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg 576w, https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg 1024w, https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg 768w, https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg 1536w, https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg 2048w\" sizes=\"(max-width: 576px) 100vw, 576px\" /></a></p>\n",
+    "description": "<p class=\"attachment\"><a href='https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg'><img width=\"576\" height=\"263\" src=\"https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg 576w, https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg 1024w, https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg 768w, https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg 1536w, https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg 2048w\" sizes=\"(max-width: 576px) 100vw, 576px\" /></a></p>\n",
     "caption": "",
     "alt_text": "",
     "media_type": "image",
@@ -53,7 +53,7 @@
           "height": 263,
           "filesize": 23515,
           "mime_type": "image/jpeg",
-          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg"
+          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg"
         },
         "large": {
           "file": "ALERT_Web-Banner_4200x1920_EN-1024x468.jpg",
@@ -61,7 +61,7 @@
           "height": 468,
           "filesize": 47139,
           "mime_type": "image/jpeg",
-          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg"
+          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg"
         },
         "thumbnail": {
           "file": "ALERT_Web-Banner_4200x1920_EN-376x376.jpg",
@@ -69,7 +69,7 @@
           "height": 376,
           "filesize": 15734,
           "mime_type": "image/jpeg",
-          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-376x376.jpg"
+          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-376x376.jpg"
         },
         "medium_large": {
           "file": "ALERT_Web-Banner_4200x1920_EN-768x351.jpg",
@@ -77,7 +77,7 @@
           "height": 351,
           "filesize": 32536,
           "mime_type": "image/jpeg",
-          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg"
+          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg"
         },
         "1536x1536": {
           "file": "ALERT_Web-Banner_4200x1920_EN-1536x702.jpg",
@@ -85,7 +85,7 @@
           "height": 702,
           "filesize": 77139,
           "mime_type": "image/jpeg",
-          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg"
+          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg"
         },
         "2048x2048": {
           "file": "ALERT_Web-Banner_4200x1920_EN-2048x936.jpg",
@@ -93,14 +93,14 @@
           "height": 936,
           "filesize": 113322,
           "mime_type": "image/jpeg",
-          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg"
+          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg"
         },
         "full": {
           "file": "ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
           "width": 2560,
           "height": 1170,
           "mime_type": "image/jpeg",
-          "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg"
+          "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg"
         }
       },
       "image_meta": {
@@ -120,84 +120,84 @@
       "original_image": "ALERT_Web-Banner_4200x1920_EN.jpg"
     },
     "post": null,
-    "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
-    "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
+    "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
+    "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
     "sizes": [
       {
         "type": "full",
         "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
-        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
+        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
         "file": "ALERT_Web-Banner_4200x1920_EN-scaled.jpg",
         "width": 2560,
         "height": 1170,
         "mime_type": "image/jpeg",
-        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg"
+        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg"
       },
       {
         "type": "2048x2048",
         "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg",
-        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg",
+        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg",
         "file": "ALERT_Web-Banner_4200x1920_EN-2048x936.jpg",
         "width": 2048,
         "height": 936,
         "filesize": 113322,
         "mime_type": "image/jpeg",
-        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg"
+        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-2048x936.jpg"
       },
       {
         "type": "1536x1536",
         "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg",
-        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg",
+        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg",
         "file": "ALERT_Web-Banner_4200x1920_EN-1536x702.jpg",
         "width": 1536,
         "height": 702,
         "filesize": 77139,
         "mime_type": "image/jpeg",
-        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg"
+        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1536x702.jpg"
       },
       {
         "type": "large",
         "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg",
-        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg",
+        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg",
         "file": "ALERT_Web-Banner_4200x1920_EN-1024x468.jpg",
         "width": 1024,
         "height": 468,
         "filesize": 47139,
         "mime_type": "image/jpeg",
-        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg"
+        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-1024x468.jpg"
       },
       {
         "type": "medium_large",
         "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg",
-        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg",
+        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg",
         "file": "ALERT_Web-Banner_4200x1920_EN-768x351.jpg",
         "width": 768,
         "height": 351,
         "filesize": 32536,
         "mime_type": "image/jpeg",
-        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg"
+        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-768x351.jpg"
       },
       {
         "type": "medium",
         "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg",
-        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg",
+        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg",
         "file": "ALERT_Web-Banner_4200x1920_EN-576x263.jpg",
         "width": 576,
         "height": 263,
         "filesize": 23515,
         "mime_type": "image/jpeg",
-        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg"
+        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-576x263.jpg"
       },
       {
         "type": "thumbnail",
         "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-376x376.jpg",
-        "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-376x376.jpg",
+        "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-376x376.jpg",
         "file": "ALERT_Web-Banner_4200x1920_EN-376x376.jpg",
         "width": 376,
         "height": 376,
         "filesize": 15734,
         "mime_type": "image/jpeg",
-        "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-376x376.jpg"
+        "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/09/ALERT_Web-Banner_4200x1920_EN-376x376.jpg"
       }
     ],
     "path": "2022/09/ALERT_Web-Banner_4200x1920_EN-scaled.jpg"
