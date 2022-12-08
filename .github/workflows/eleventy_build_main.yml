@@ -13,14 +13,17 @@ on:
     branches:
       - main
 
-concurrency: sequential_deployments
+concurrency: 
+  group: sync_deployments
+  cancel-in-progress: true
 
 jobs:
   build_deploy:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: 'npm'

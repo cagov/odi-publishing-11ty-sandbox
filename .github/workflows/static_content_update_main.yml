@@ -5,7 +5,9 @@ on:
   repository_dispatch:
     types: [static_content_update_main]
 
-concurrency: sequential_static_content_update_main
+concurrency: 
+  group: sync_static_content_update_main
+  cancel-in-progress: true
 
 jobs:
   build_deploy:
