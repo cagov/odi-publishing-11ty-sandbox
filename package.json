@@ -22,7 +22,7 @@
     "code:format": "npm run format:prettier --ignore-path",
     "content:clean": "rm -rf docs && rm -rf pages/_content/menu && rm -rf pages/_content/pages && rm -rf pages/_content/posts && rm -rf pages/_content/redirects",
     "content:update": "npm install odi-publishing-static-test-content --production --no-package-lock",
-    "content:update:raw": "npm install https://github.com/cagov/odi-publishing-static-test-content/tarball/main --save",
+    "content:update:raw": "npm install https://github.com/cagov/odi-publishing-static-test-content/tarball/main-reduced --save",
     "install:codetools": "npm install group-dependencies && deps install test"
   },
   "keywords": [
@@ -58,7 +58,7 @@
     "aws-sdk": "^2.1200.0",
     "cheerio": "^1.0.0-rc.12",
     "cross-env": "^7.0.3",
-    "odi-publishing-static-test-content": "https://github.com/cagov/odi-publishing-static-test-content/tarball/main"
+    "odi-publishing-static-test-content": "https://github.com/cagov/odi-publishing-static-test-content/tarball/main-reduced"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^4.3.0",

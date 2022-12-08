@@ -25,7 +25,7 @@ jobs:
           node-version: 16
       - name: Check for static content updates # update static content repo.
         run: |
-          npm install odi-publishing-static-test-content
+          npm run content:update:raw
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr
         uses: peter-evans/create-pull-request@v4
