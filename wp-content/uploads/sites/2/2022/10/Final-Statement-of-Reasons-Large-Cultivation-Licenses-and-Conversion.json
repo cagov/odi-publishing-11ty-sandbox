@@ -4,12 +4,12 @@
     "updated_date": "2022-10-17T17:05:27",
     "field_reference": "https://developer.wordpress.org/rest-api/reference/media/",
     "api_version": "v2",
-    "api_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/",
-    "object_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-json/wp/v2/media/12180",
+    "api_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/",
+    "object_url": "https://api.cannabis.ca.gov/wp-json/wp/v2/media/12180",
     "process": {
       "source_code": "https://github.com/cagov/wordpress-to-github",
-      "source_data": "https://editor-dev-cannabis-ca-gov.pantheonsite.io",
-      "deployment_target": "https://github.com/cagov/odi-publishing-static-test-content/tree/main"
+      "source_data": "https://api.cannabis.ca.gov",
+      "deployment_target": "https://github.com/cagov/static-content-cannabis/tree/main"
     },
     "refresh_frequency": "as needed"
   },
@@ -17,13 +17,13 @@
     "id": 12180,
     "date": "2022-10-17T10:05:27",
     "date_gmt": "2022-10-17T17:05:27",
-    "guid": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf",
+    "guid": "https://api.cannabis.ca.gov/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf",
     "modified": "2022-10-17T10:05:27",
     "modified_gmt": "2022-10-17T17:05:27",
     "slug": "final-statement-of-reasons-large-cultivation-licenses-and-conversion",
     "status": "inherit",
     "type": "attachment",
-    "link": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/final-statement-of-reasons-large-cultivation-licenses-and-conversion/",
+    "link": "https://api.cannabis.ca.gov/final-statement-of-reasons-large-cultivation-licenses-and-conversion/",
     "title": "Final Statement of Reasons &#8211; Large Cultivation Licenses and Conversion",
     "comment_status": "closed",
     "ping_status": "closed",
@@ -35,7 +35,7 @@
     "categories": [
       14
     ],
-    "description": "<p class=\"attachment\"><a href='https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf'>Final Statement of Reasons - Large Cultivation Licenses and Conversion</a></p>\n",
+    "description": "<p class=\"attachment\"><a href='https://api.cannabis.ca.gov/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf'>Final Statement of Reasons - Large Cultivation Licenses and Conversion</a></p>\n",
     "caption": "<p>Final Statement of Reasons &#8211; Large Cultivation Licenses and Conversion</p>\n",
     "alt_text": "",
     "media_type": "file",
@@ -45,8 +45,8 @@
       "sizes": {}
     },
     "post": null,
-    "source_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf",
-    "wordpress_url": "https://editor-dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf",
+    "source_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf",
+    "wordpress_url": "https://api.cannabis.ca.gov/wp-content/uploads/2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf",
     "path": "2022/10/Final-Statement-of-Reasons-Large-Cultivation-Licenses-and-Conversion.pdf"
   }
 }
