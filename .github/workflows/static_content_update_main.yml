@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-      - run: npm ci
+      - run: npm ci --verbose
       - name: Check for static content updates # update static content repo.
         run: |
-          npm update odi-publishing-static-test-content     
+          npm update odi-publishing-static-test-content --verbose   
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr
         uses: peter-evans/create-pull-request@v4
