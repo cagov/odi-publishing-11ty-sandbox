@@ -11,10 +11,12 @@ jobs:
   build_deploy:
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm' 
+          cache: 'npm'
+      - run: npm ci
       - name: "Partially checkout source code"
         run: |
           REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
@@ -22,18 +24,10 @@ jobs:
           git config --global user.name github-actions
           git clone --filter=blob:none --no-checkout --depth 1  --sparse $REPO .
           git sparse-checkout init --cone
-          git sparse-checkout add "package.json" "package-lock.json"   
-      - name: "Partially checkout source code"
+          git sparse-checkout add "package.json" "package-lock.json"
+      - name: Check for static content updates # update static content repo.
         run: |
-          mkdir node_modules
-          cd node_modules
-          REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/odi-publishing-static-test-content.git"
-          git config --global user.email github-actions@github.com
-          git config --global user.name github-actions
-          git clone --filter=blob:none --no-checkout --depth 1  --sparse $REPO .
-      # - name: Check for static content updates # update static content repo.
-      #   run: |
-      #     npm install https://github.com/cagov/odi-publishing-static-test-content/tarball/main --save --verbose
+          npm update odi-publishing-static-test-content     
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr
         uses: peter-evans/create-pull-request@v4
