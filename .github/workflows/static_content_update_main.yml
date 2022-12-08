@@ -17,14 +17,6 @@ jobs:
           node-version: 16
           cache: 'npm'
       - run: npm ci
-      - name: "Partially checkout source code"
-        run: |
-          REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-          git config --global user.email github-actions@github.com
-          git config --global user.name github-actions
-          git clone --filter=blob:none --no-checkout --depth 1  --sparse $REPO .
-          git sparse-checkout init --cone
-          git sparse-checkout add "package.json" "package-lock.json"
       - name: Check for static content updates # update static content repo.
         run: |
           npm update odi-publishing-static-test-content     
