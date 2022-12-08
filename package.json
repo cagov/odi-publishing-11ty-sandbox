@@ -21,7 +21,8 @@
     "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
     "code:format": "npm run format:prettier --ignore-path",
     "content:clean": "rm -rf docs && rm -rf pages/_content/menu && rm -rf pages/_content/pages && rm -rf pages/_content/posts && rm -rf pages/_content/redirects",
-    "content:update": "npm i odi-publishing-static-test-content --omit=dev"
+    "content:update": "npm update odi-publishing-static-test-content",
+    "install:codetools": "npm install group-dependencies && deps install test"
   },
   "keywords": [
     "@cagov",
@@ -30,25 +31,11 @@
   "repository": "https://github.com/odi-publishing-11ty-sandbox",
   "author": "Office of Data and Innovation",
   "license": "MIT",
-  "devDependencies": {
-    "@open-wc/eslint-config": "^4.3.0",
-    "@open-wc/testing": "^3.1.6",
-    "@playwright/test": "^1.25.2",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@web/dev-server": "^0.1.17",
-    "axe-playwright": "^1.1.11",
-    "clean-css": "^5.3.1",
-    "cross-env": "^7.0.3",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "html-minifier": "^4.0.0",
-    "prettier": "^2.4.1",
-    "rollup-plugin-terser": "^7.0.2"
-  },
   "dependencies": {
     "@11ty/eleventy": "^2.0.0-canary.15",
-    "@11ty/eleventy-server-browsersync": "^1.0.2",
     "@cagov/11ty-build-system": "^1.0.0-beta.2",
+    "aws-sdk": "^2.1200.0",
+    "cheerio": "^1.0.0-rc.12",
     "@cagov/ds-accordion": "^2.0.3",
     "@cagov/ds-agency-footer": "^1.0.2",
     "@cagov/ds-back-to-top": "^2.0.2",
@@ -74,8 +61,76 @@
     "@cagov/ds-statewide-header": "^2.0.0",
     "@cagov/ds-step-list": "^3.0.0",
     "@cagov/ds-table": "^1.0.0",
-    "aws-sdk": "^2.1200.0",
-    "cheerio": "^1.0.0-rc.12",
     "odi-publishing-static-test-content": "github:cagov/odi-publishing-static-test-content#1.0.49"
-  }
+  },
+  "devDependencies": {
+    "@11ty/eleventy-server-browsersync": "^1.0.2",
+    "@open-wc/eslint-config": "^4.3.0",
+    "@open-wc/testing": "^3.1.6",
+    "@playwright/test": "^1.25.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@web/dev-server": "^0.1.17",
+    "axe-playwright": "^1.1.11",
+    "clean-css": "^5.3.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "html-minifier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "testDependencies": [
+    "@open-wc/eslint-config",
+    "@open-wc/testing",
+    "@playwright/test",
+    "@web/dev-server",
+    "axe-playwright"
+  ],
+  "codeDependencies": [
+    "clean-css",
+    "eslint",
+    "eslint-config-prettier"
+  ],
+  "buildDependencies": [
+    "@rollup/plugin-node-resolve",
+    "cross-env",
+    "html-minifier",
+    "prettier",
+    "rollup-plugin-terser",
+    "aws-sdk",
+    "cheerio",
+    "group-dependencies",
+    "@11ty/eleventy",
+    "@cagov/11ty-build-system"
+  ],
+  "contentDependencies": [
+    "odi-publishing-static-test-content"
+  ],
+  "designSystemComponents": [
+    "@cagov/ds-accordion",
+    "@cagov/ds-agency-footer",
+    "@cagov/ds-back-to-top",
+    "@cagov/ds-base-css",
+    "@cagov/ds-branding",
+    "@cagov/ds-button-grid",
+    "@cagov/ds-dropdown-menu",
+    "@cagov/ds-feature-card",
+    "@cagov/ds-google-translate",
+    "@cagov/ds-icons",
+    "@cagov/ds-link-grid",
+    "@cagov/ds-link-icon",
+    "@cagov/ds-page-alert",
+    "@cagov/ds-page-feedback",
+    "@cagov/ds-page-navigation",
+    "@cagov/ds-pagination",
+    "@cagov/ds-regulatory-outline",
+    "@cagov/ds-site-footer",
+    "@cagov/ds-site-header",
+    "@cagov/ds-site-navigation",
+    "@cagov/ds-skip-to-content",
+    "@cagov/ds-statewide-footer",
+    "@cagov/ds-statewide-header",
+    "@cagov/ds-step-list",
+    "@cagov/ds-table"
+  ]
 }
