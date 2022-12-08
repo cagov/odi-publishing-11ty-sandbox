@@ -57,7 +57,7 @@
     "aws-sdk": "^2.1200.0",
     "cheerio": "^1.0.0-rc.12",
     "cross-env": "^7.0.3",
-    "odi-publishing-static-test-content": "https://github.com/cagov/odi-publishing-static-test-content/tarball/main"
+    "odi-publishing-static-test-content": "https://github.com/cagov/odi-publishing-static-test-content/tarball/main-reduced"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^4.3.0",
