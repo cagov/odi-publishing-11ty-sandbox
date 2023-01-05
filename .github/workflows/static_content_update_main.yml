@@ -29,7 +29,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           committer: ${{ secrets.ODI_GITHUB_USER }} <noreply@github.com> 
           base: main
-          head_repo: ${{ secrets.ODI_GITHUB_USER }}:main
+          branch: main
+          # head_repo: ${{ secrets.ODI_GITHUB_USER }}:main
           title: "Static content update to main branch"
           body: |
             Updated static content
