@@ -24,7 +24,7 @@ jobs:
           npm update odi-publishing-static-test-content --production
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v4.2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           committer: ${{ secrets.ODI_GITHUB_USER }} <noreply@github.com> 
