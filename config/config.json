@@ -54,10 +54,10 @@
             "http://wordpress.test:8888"
         ],
         "media_replace_urls": [
-            "https://cannabis.ca.gov/wp-content/uploads/sites/2/",
             "http://cannabis.ca.gov/wp-content/uploads/",
-            "https://api.cannabis.ca.gov/wp-content/uploads/sites/2/",
+            "https://cannabis.ca.gov/wp-content/uploads/sites/2/",
             "https://cannabis.ca.gov/wp-content/uploads/",
+            "https://api.cannabis.ca.gov/wp-content/uploads/sites/2/",
             "https://api.cannabis.ca.gov/wp-content/uploads/",
             "https://headless.cannabis.ca.gov/wp-content/uploads/sites/2/",
             "https://headless.cannabis.ca.gov/wp-content/uploads/",
