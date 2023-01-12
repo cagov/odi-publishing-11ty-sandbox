@@ -52,7 +52,7 @@ jobs:
           aws-region: us-west-1
       - name: Deploy to S3
         # jbum added --exclude directory
-        run: aws s3 sync --follow-symlinks --delete ./docs s3://pr.example.ca.gov/pr/${URLSAFE_BRANCH_NAME} --exclude 'wp-content/uploads/* docs/wp-content/uploads/*'
+        run: aws s3 sync --follow-symlinks --delete ./docs s3://pr.example.ca.gov/pr/${URLSAFE_BRANCH_NAME} --exclude 'wp-content/uploads/*'
       - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id XXXXXXXXXX --paths "/*"
       - name: Post URL to PR
