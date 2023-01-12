@@ -57,8 +57,8 @@ jobs:
           node-version: 16.x
       # Deploy to odi-publishing-11ty-sandbox.ca.gov
       - name: Deploy to S3 (odi-publishing-11ty-sandbox.ca.gov)
-        # jbum removed --delete and added exclusion
-        run: aws s3 sync --follow-symlinks ./docs s3://odi-publishing-11ty-sandbox.ca.gov --exclude 'wp-content/uploads/* docs/wp-content/uploads/*'
+        # jbum added --exclude
+        run: aws s3 sync --follow-symlinks --delete ./docs s3://odi-publishing-11ty-sandbox.ca.gov --exclude 'wp-content/uploads/* docs/wp-content/uploads/*'
       # Reset the cache-control headers on static assets on production S3 bucket
       - name: Reset cache-control on fonts
         uses: prewk/s3-cp-action@v2
